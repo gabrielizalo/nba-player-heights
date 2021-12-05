@@ -1,6 +1,44 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <img src="assets/readme-header.jpg" alt="NBA Players by Gabo" />
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Motivation
+
+Just a React exercise:
+
+- Write a function that searches through NBA player heights based on user input.
+- The raw data is taken from [NBA Player heights from 2008-9](https://www.openintro.org/data/index.php?data=nba_heights).
+- The data is served in json format by [the endpoint](https://mach-eight.uc.r.appspot.com/).
+- The app will take a single integer input, download the raw data and print a list of all pairs of players whose height
+  in inches adds up to the integer input to the application.
+- If no matches are found, the application will print "No matches found".
+
+# Tech Stack
+
+- [React](https://reactjs.org/): A JavaScript library for building user interfaces.
+- [Create React App](https://github.com/facebook/create-react-app): Set up a modern web app by running one command.
+- [MachEight Endpoint](https://mach-eight.uc.r.appspot.com/): Heights of all NBA players from the 2008-9 season.
+- [MUI React UI framework](https://mui.com/): The React UI library you always wanted.
+- [The Real FavIcon Generator](https://realfavicongenerator.net/): Favicon Generator. For real. All browsers. All
+  platforms. Your favorite technologies.
+- [ESLint](https://eslint.org/): Find and fix problems in your JavaScript code.
+- [Airbnb JavaScript Style Guide](https://airbnb.io/javascript/react/): A mostly reasonable approach to React and JSX.
+- [Prettier](https://prettier.io/): An opinionated code formatter.
+- [npm packages](https://www.npmjs.com/):
+    - [gh-pages](https://www.npmjs.com/package/gh-pages): 
+      Publish files to a gh-pages branch on GitHub (or any other branch anywhere else).
+    - [husky](https://www.npmjs.com/package/husky):
+      Husky improves your commits and more 🐶 woof! Used to run Prettier and Linter before every commit.
+    - [prop-types](https://www.npmjs.com/package/prop-types):
+      Runtime type checking for React props and similar objects.
+    - [semantic-release](https://www.npmjs.com/package/semantic-release):
+      semantic-release automates the whole package release workflow including: determining the next version number,
+      generating the release notes, and publishing the package.
+
+# NBA Credits
+
+- Logo: [NBA Logo Wallpaper](https://wallpapersafari.com/nba-logo-wallpaper-border/)
+- Wallpaper: [NBA Stars Wallpapers](https://wallpaperaccess.com/nba-stars)
 
 ## Available Scripts
 
@@ -8,63 +46,33 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in the interactive watch mode.
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `npm run build` ~ `npm run predeploy`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
+The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm run deploy`
 
-### `npm run eject`
+Publish build files to [project GitHub Page](https://gabrielizalo.github.io/starwars-planets/).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### `npm run format`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Run Prettier script.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `npm run lint`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Validate code with eslint rules.
