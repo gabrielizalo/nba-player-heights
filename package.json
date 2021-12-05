@@ -1,26 +1,60 @@
 {
   "name": "nba-player-heights",
   "version": "0.1.0",
+  "homepage": "https://gabrielizalo.github.io/nba-player-heights",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.0",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
-  },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build  &&  npm run build:appversion  &&  npm run build:buildversion",
+    "build:appversion": "APP_VERSION=$npm_package_version  &&  sed -i -- 's/%APP_VERSION%/'$APP_VERSION'/g' build/index.html",
+    "build:buildversion": "BUILD_VERSION=$(date +%Y-%m-%d)-$(date +%T)  &&  sed -i -- 's/%BUILD_VERSION%/'$BUILD_VERSION'/g' build/index.html",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}'",
+    "lint": "eslint --ext js,jsx .",
+    "lint:fix": "eslint --ext js,jsx --fix",
+    "precommit": "npm run format && npm run lint:fix"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ]
+  },
+  "prettier": {
+    "semi": true,
+    "tabWidth": 2,
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "jsxBracketSameLine": false
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ],
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      {
+        "path": "@semantic-release/git",
+        "assets": [
+          "package.json",
+          "package-lock.json",
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
     ]
   },
   "browserslist": {
@@ -34,5 +68,33 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.2",
+    "@mui/system": "^5.1.1",
+    "@testing-library/jest-dom": "^5.16.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.1.2"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^19.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "gh-pages": "^3.2.3",
+    "husky": "^7.0.4",
+    "prettier": "^2.4.1"
   }
 }

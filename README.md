@@ -18,6 +18,7 @@ Just a React exercise:
 - [React](https://reactjs.org/): A JavaScript library for building user interfaces.
 - [Create React App](https://github.com/facebook/create-react-app): Set up a modern web app by running one command.
 - [MachEight Endpoint](https://mach-eight.uc.r.appspot.com/): Heights of all NBA players from the 2008-9 season.
+- [HTML5 Boilerplate](https://html5boilerplate.com/): The web’s most popular front-end template
 - [MUI React UI framework](https://mui.com/): The React UI library you always wanted.
 - [The Real FavIcon Generator](https://realfavicongenerator.net/): Favicon Generator. For real. All browsers. All
   platforms. Your favorite technologies.
@@ -25,19 +26,20 @@ Just a React exercise:
 - [Airbnb JavaScript Style Guide](https://airbnb.io/javascript/react/): A mostly reasonable approach to React and JSX.
 - [Prettier](https://prettier.io/): An opinionated code formatter.
 - [npm packages](https://www.npmjs.com/):
-    - [gh-pages](https://www.npmjs.com/package/gh-pages): 
-      Publish files to a gh-pages branch on GitHub (or any other branch anywhere else).
-    - [husky](https://www.npmjs.com/package/husky):
-      Husky improves your commits and more 🐶 woof! Used to run Prettier and Linter before every commit.
-    - [prop-types](https://www.npmjs.com/package/prop-types):
-      Runtime type checking for React props and similar objects.
-    - [semantic-release](https://www.npmjs.com/package/semantic-release):
-      semantic-release automates the whole package release workflow including: determining the next version number,
-      generating the release notes, and publishing the package.
+  - [gh-pages](https://www.npmjs.com/package/gh-pages):
+    Publish files to a gh-pages branch on GitHub (or any other branch anywhere else).
+  - [husky](https://www.npmjs.com/package/husky):
+    Husky improves your commits and more 🐶 woof! Used to run Prettier and Linter before every commit.
+  - [prop-types](https://www.npmjs.com/package/prop-types):
+    Runtime type checking for React props and similar objects.
+  - [semantic-release](https://www.npmjs.com/package/semantic-release):
+    semantic-release automates the whole package release workflow including: determining the next version number,
+    generating the release notes, and publishing the package.
 
 # NBA Credits
 
 - Logo: [NBA Logo Wallpaper](https://wallpapersafari.com/nba-logo-wallpaper-border/)
+- Icon: [NBA Icon](https://iconarchive.com/show/button-ui-requests-13-icons-by-blackvariant/NBA-icon.html)
 - Wallpaper: [NBA Stars Wallpapers](https://wallpaperaccess.com/nba-stars)
 
 ## Available Scripts
