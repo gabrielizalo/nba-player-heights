@@ -3,6 +3,7 @@ import { Box, Container, Grid } from '@mui/material';
 
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
+import InputBar from '../../components/InputBar/InputBar';
 import nbaPlayersHBackground from '../../assets/nba-player-heights-bg.jpg';
 
 const Home = function Home() {
@@ -28,6 +29,7 @@ const Home = function Home() {
           }}
         >
           <Header />
+          <InputBar />
           <Footer />
         </Grid>
       </Container>
