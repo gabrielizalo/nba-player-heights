@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/gabrielizalo/nba-player-heights/compare/v1.2.0...v1.2.1) (2021-12-06)
+
+
+### Bug Fixes
+
+* link for og image ([a8f7892](https://github.com/gabrielizalo/nba-player-heights/commit/a8f789279752a1ffd6adc23ad40bed4e9d03506c))
+
 # [1.2.0](https://github.com/gabrielizalo/nba-player-heights/compare/v1.1.0...v1.2.0) (2021-12-06)
 
 
