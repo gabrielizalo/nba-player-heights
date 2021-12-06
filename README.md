@@ -32,6 +32,8 @@ Just a React exercise:
     Husky improves your commits and more 🐶 woof! Used to run Prettier and Linter before every commit.
   - [prop-types](https://www.npmjs.com/package/prop-types):
     Runtime type checking for React props and similar objects.
+  - [react-query](https://www.npmjs.com/package/react-query):
+    Hooks for fetching, caching and updating asynchronous data in React.
   - [semantic-release](https://www.npmjs.com/package/semantic-release):
     semantic-release automates the whole package release workflow including: determining the next version number,
     generating the release notes, and publishing the package.
